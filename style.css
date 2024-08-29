@@ -5,15 +5,6 @@
     box-sizing: border-box;
 }
 
-.container {
-    background: #b7b9e2;
-    border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    width: 350px;
-    text-align: center;
-}
-
 body {
     background: url(images/bg.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -23,6 +14,28 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+}
+
+.bg-text-animation {
+    position: absolute;
+    top: 0;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px #b7b9e2;
+    -webkit-text-fill-color: transparent;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    z-index: -1;
+    user-select: none;
+}
+
+.container {
+    background: #b7b9e2;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    width: 350px;
+    text-align: center;
 }
 
 .profile-picture {
@@ -78,19 +91,28 @@ body {
 }
 
 .items {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgba(213,228,249,255);
     padding: 10px;
     border-radius: 8px;
     width: 100%;
     text-align: center;
+    border: 2px solid #b7b9e2;
     transition: all 0.3s ease-in-out;
 }
 
 .items:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    border: 2px solid white;
     background-color: rgba(238,215,243,255);
+}
+
+.items-action {
+    color: black;
+    cursor: pointer;
+    padding: 10px;
 }
 
 .items a {
@@ -99,6 +121,55 @@ body {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+}
+
+.copyright-text {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#toast {
+    width: max-content;
+    position: fixed;
+    top: 0;
+}
+  
+.toast-container {
+    background-color: white;
+    color: #0f0f25;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    animation: muncul 300ms ease-in-out;
+}
+  
+.toast-gone {
+    animation: hilang 1s ease-in-out 1s;
+}
+  
+@keyframes muncul {
+    from {
+      opacity: 0;
+      transform: translateY(-4rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+@keyframes hilang {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
 }
 
 @media only screen and (max-width: 768px) {
