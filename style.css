@@ -16,19 +16,6 @@ body {
     margin: 0;
 }
 
-.bg-text-animation {
-    position: absolute;
-    top: 0;
-    font-size: 5rem;
-    text-transform: uppercase;
-    font-weight: 900;
-    -webkit-text-stroke: 2px #b7b9e2;
-    -webkit-text-fill-color: transparent;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    z-index: -1;
-    user-select: none;
-}
-
 .container {
     background: #b7b9e2;
     border-radius: 15px;
