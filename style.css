@@ -111,13 +111,12 @@ body {
 }
 
 .copyright {
-    display: absolute;
+    position: absolute;
     bottom: 0;
-    justify-content: center;
 }
 
 .copyright-text {
-    font-size: 1rem;
+    font-size: 13px;
     font-weight: 200;
     color: rgba(0, 0, 0, 0.5);
 }
