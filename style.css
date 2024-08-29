@@ -111,14 +111,15 @@ body {
 }
 
 .copyright {
-    position: absolute;
-    bottom: 0;
-    padding: 0 0;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
 }
 
 .copyright-text {
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 #toast {
