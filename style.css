@@ -111,8 +111,8 @@ body {
 }
 
 .copyright {
-    display: flex;
-    padding-top: 10px;
+    display: absolute;
+    bottom: 0;
     justify-content: center;
 }
 
