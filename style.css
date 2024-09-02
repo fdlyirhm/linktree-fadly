@@ -111,8 +111,10 @@ body {
 }
 
 .copyright {
-    position: fixed;
+    position: flex;
     bottom: 0;
+    justify-content: center;
+    padding-top: 10px;
 }
 
 .copyright-text {
