@@ -9,7 +9,7 @@ document.querySelectorAll(".sosmed i").forEach((sosmed) => {
     });
 });
 
-const actionLink = document.querySelectorAll(".items .items-action");
+const actionLink = document.querySelectorAll(".links .link-action");
 
 actionLink.forEach((action) => {
     action.addEventListener("click", (e) => {
